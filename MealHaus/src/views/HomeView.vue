@@ -1,15 +1,9 @@
 <template>
 <div class=container>
   <div class="upper-body">
-    <h1>Welcome to MealHaus!</h1>
-    <h3>Weekly Meal Planning Made Easy</h3>
-    <p>
-          Take the hassle out of weekly meal planning by 
-          selecting your week's meals, and generating your 
-          custom shopping list. With plenty of meals to choose 
-          from and more meals added weekly, we are sure you'll be 
-          able to find a meal plan that you'll love!  
-        </p>
+    <h1>Welcome to Food Frenzy!</h1>
+    <h3>Finding recommendatons has never been this easy!</h3>
+  
   </div>
   
   <div class="card-container">
@@ -49,10 +43,8 @@ import CardItem from '../components/carditem.vue'
     font-size: 1.4vw;
   }
   .upper-body {
-    background-color: #FB6100;
+    background-color: #0decbc;
     padding: 20px 10px 20px 10%;
-    border-radius: 0px 0px 25px 0px;
-    margin-right: 10%;
     text-align: center;
   }
   .upper-body h3 {

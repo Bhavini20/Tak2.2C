@@ -1,8 +1,7 @@
 <template>
   <div class="container">
     <div class="logo-container">
-      <!-- ToDo: Fix Stylings -->
-      <RouterLink class="link-item" to="/"><span class="highlight">Meal</span><span class="underline">Haus</span></RouterLink>
+      <RouterLink class="link-item" to="/"><span class="highlight">Food</span><span>Frenzy</span></RouterLink>
     </div>
     <nav>
       <RouterLink class="link-item" to="/start">Get Started</RouterLink>
@@ -33,10 +32,10 @@
     cursor: pointer;
   }
   .highlight {
-    color: #FB6100;
+    color: #2eb2d3;
   }
   .underline {
-    border-bottom: 5px solid #FB6100;
+    border-bottom: 5px solid #1e94ca;
   }
   nav {
     display: flex;
