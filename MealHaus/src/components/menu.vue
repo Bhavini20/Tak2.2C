@@ -1,21 +1,21 @@
 <template>
   <div class=container>
     <h1 style="padding-top: 1.5rem;">Recommended Meals</h1>
-    <div  class="selection-container" v-show="counter < 7">
+    <div  class="main-container" v-show="c < 7">
       <h3>Select your meal for Today</h3>
-      <div class=selection-options>
+      <div class=options-available>
         <ul>
           <li v-for="items in menu" :key="items">
             <h3>{{ items.dishName }}</h3>
             <p>{{ items.mealDescription }}</p>
-            <button @click="chooseItem(items)">Add</button>
+            <button @click="selectMenu(items)">Add</button>
             <!-- <p>{{items.mealDescription}}</p> -->
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="chosen-container" v-show="counter >= 1">
+    <div class="chosen-container" v-show="c >= 1">
       <h3 style="padding-top: 3rem;"> Chosen Meals:</h3>
       <ul>
         <li v-for="meals in selectedItems" :key="meals">
@@ -66,18 +66,18 @@ import { ref } from 'vue'
   ])
   const selectedItems = ref([])
 
-  let counter = 0
+  let c = 0
 
-  function chooseItem(meal) {
-    while (counter < 3) {
-      removeFromList(meal)
+  function selectMenu(meal) {
+    while (c < 3) {
+      removeItem(meal)
       selectedItems.value.push(meal)
-      counter++
-      console.log(counter)
+      c++
+      console.log(c)
       break
     }
   }
-  function removeFromList(item) {
+  function removeItem(item) {
     menu.value = menu.value.filter((t) => t !== item)
   }
 </script>
@@ -91,32 +91,31 @@ import { ref } from 'vue'
     text-align: center;
   }
  
-  .selection-container {
+  .main-container {
     margin-top: 20px;
     text-align: center
   }
   ul {
     list-style: none;
   }
-  .selection-options li {
+  .options-available li {
     padding: 10px;
     margin-top: 10px;
-    
   }
   
-  .selection-container li h3{
+  .main-container li h3{
     color: rgb(64, 166, 235);
   }
-  .selection-container li button{
+  .main-container li button{
     border: 2px solid #fff;
     color: #fff;
   }
-  .selection-container li button:hover{
+  .main-container li button:hover{
     border: 2px solid rgb(64, 166, 235);
     color: rgb(64, 166, 235);
     background-color: #fff;
   }
-  .selection-options li h3 {
+  .options-available li h3 {
     margin-top: 10px;
     color: rgb(64, 166, 235);
   }
