@@ -1,5 +1,8 @@
 <template>
-  MEALS - COMING SOON!
+  <div>
+
+    MEALS - COMING SOON!
+  </div>
 </template>
 
 <script setup>

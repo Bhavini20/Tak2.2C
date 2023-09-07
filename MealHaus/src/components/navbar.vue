@@ -6,14 +6,11 @@
     </div>
     <nav>
       <RouterLink class="link-item" to="/start">Get Started</RouterLink>
-      <RouterLink class="link-item" to="/about">About</RouterLink>
-      <RouterLink class="link-item" to="/meals">Meals</RouterLink>
-      <RouterLink class="link-item" to="/faq">FAQ</RouterLink>
+      <RouterLink class="link-item" to="/about">About US</RouterLink>
+      <RouterLink class="link-item" to="/meals">Reviews</RouterLink>
+      <RouterLink class="link-item" to="/faq">Contact US</RouterLink>
     </nav>
-    <div class="extras-container">
-      <button class="login-button">Log In</button>
-      <button class="signup-button">Sign Up</button>
-    </div>
+  
   </div>
 </template>
 

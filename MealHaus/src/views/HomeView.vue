@@ -34,21 +34,7 @@
       <RouterLink class="link-item" to="/start"><button class="get-started-button"><span>Get Started!</span></button></RouterLink>
   </div>
 
-  <div class="middle-container">
-    <h3>How To Use</h3>
-  </div>
-    <div class="first-card">
-      <h5>Step 1: Register</h5>
-      <p>Register an account to begin creating your meal plan.</p>
-    </div>
-    <div class="second-card">
-      <h5>Step 2: Plan</h5>
-      <p>Plan and create your weekly meal plan by simply choosing your daily meals.</p>
-    </div>
-    <div class="third-card">
-      <h5>Step 3: Shop</h5>
-      <p>Take your generated shopping list and hit the shops.</p>
-    </div>
+  
   </div>
 </template>
 
