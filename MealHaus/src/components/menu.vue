@@ -41,11 +41,11 @@ import { ref } from 'vue'
     {
       dishName: 'Achari baingan',
       dishIngredients: ['Brinjal', 'Indian Spices', 'Mango pickel'],
-      mealDescription: 'brinjal cooked with pickle spices in gravy'
+      mealDescription: 'Brinjal cooked with pickle spices in gravy'
   },
   {
       dishName: 'Aloo gobi',
-      dishIngredients: ['Cauliflower', 'potatoes', ' Indian Spices', 'Curry leanes'],
+      dishIngredients: ['Cauliflower', 'Potatoes', 'Indian Spices', 'Curry leanes'],
       mealDescription: 'Cauliflower with potatoes sautéed with garam masala, turmeric, sometimes kalonji and curry leaves.'
   },  
   {
@@ -73,7 +73,6 @@ import { ref } from 'vue'
       removeItem(meal)
       selectedItems.value.push(meal)
       c++
-      console.log(c)
       break
     }
   }
