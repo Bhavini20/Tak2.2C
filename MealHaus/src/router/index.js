@@ -23,12 +23,12 @@ const router = createRouter({
     {
     path: '/meals',
     name: 'meals',
-    component: () => import('../views/MealsView.vue')
+    component: () => import('../views/Recommendations.vue')
     },
     {
     path: '/faq',
     name: 'faq',
-    component: () => import('../views/FaqView.vue')
+    component: () => import('../views/ContactUs.vue')
     }
   ]
 })

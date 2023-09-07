@@ -1,5 +1,5 @@
 <template>
- <div> Contct Us whenever wherever!</div>
+ <div style="padding: 3rem;"> Contct Us whenever wherever!</div>
 </template>
 
 <script setup>
